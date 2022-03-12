@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+.fondo{
+    background-image: url(../img/carruselimg5.jpg);
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 0;
+    left: 0;
+}
+/*Nosotros Flexbox*/
+.titulo{
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px black;
+}
+
+.container__flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    color: white;
+    justify-content: space-evenly; }
+    .container__flex .container__1, .container__flex .container__2 {
+      padding: 40px;
+      width: 500px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(50px);
+      text-align: justify;
+      border-radius: 30px;
+      box-shadow: 0 5px 5px black;
+      transition: all .0,25s;
+      margin: 20px; }
+    .container__flex p {
+      padding: 23px; }
+  
+ /* Sevicios Grids */
+.container__galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    /* grid-template-rows: 100px 100px auto; */
+    justify-items: center;
+    align-items: center; }
+    .container__galeria .galeria_item {
+      /* background: black; */
+      border: 1px solid white; }
+      .container__galeria .galeria_item .galeria_img {
+        width: 100%; }
+  
+  .grid_container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 100 px;
+    grid-template-columns: repeat(3, 1fr); }
+    .grid_container img {
+      width: 100%; }
+  
+  /*hijos del container*/
+  .grid_container div {
+    background-color: white; }
+
+p{
+    padding: 23px;
+}
+
+/* body{
+    background: blue;
+} */
+
+/* Sevicios Grids */
+.container__galeria{
+    background: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    /* grid-template-rows: 100px 100px auto; */
+    justify-items: center;
+    align-items: center;
+}
+
+
+.galeria_item{
+    /* background: black; */
+    border: 1px solid black;
+}
+
+.galeria_img{
+    width: 100%;
+    background: red;
+}    
+
+
+
+
+/* Contacto */
+.form{
+    display: flex;
+    justify-content: center;
+}
+ /* Carrusel */
+
+h2{
+    text-shadow: 2px 2px 4px black;
+}
+
+body{
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+nav{
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+/* footer */
+footer{
+    background: rgb(0, 0, 91);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+i{
+    padding-inline: 10px;
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+    text-align:left;
+    /* background: rgb(2, 2, 80); */
+}
+
+@media (max-width:980px){
+    .container__galeria{
+        background: rgb(0, 0, 0);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        margin: 0 auto;
+        /* grid-template-rows: 100px 100px auto; */
+        justify-items: center;
+        align-items: center;
+    }
+    
+}
+
+
+
