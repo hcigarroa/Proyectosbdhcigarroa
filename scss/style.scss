@@ -1,0 +1,215 @@
+* {
+  margin: 0px;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+//Variables//
+//-colores//
+$bluebd:#010d52;
+$greenbd:#088a08;
+$graybd:#F0F0F0;
+
+//Index.html//
+//aplicando bootstrap//
+// Carrusel//
+div{
+  h2, p{
+  text-shadow: 2px 2px 4px black;
+  }
+}
+
+//Nosotros.html//
+//Nosotros Flexbox//
+
+.titulo{
+  padding: 20px;
+  text-align: center;
+  color: aliceblue;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px black;
+}
+
+.fondo{
+  background-image: url(../img/carruselimg5.jpg);
+  position: relative;
+  width: 100%;
+  height: 90%;
+  top: 0;
+  left: 0;
+}
+.container__flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 23px;
+  color: white;
+  justify-content: space-evenly; 
+  p {
+    padding: 23px; }
+
+  .container__1,  .container__2 {
+    padding: 40px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    text-align: justify;
+    border-radius: 30px;
+    box-shadow: 0 5px 5px black;
+    transition: all .0,25s;
+    margin: 20px; }
+    
+}
+
+//Servicios.html//
+//Aplicando Grid//
+.container__galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  margin: 0 auto;
+  /* grid-template-rows: 100px 100px auto; */
+  justify-items: center;
+  align-items: center; }
+  .container__galeria {
+    /* background: black; */
+    border: 4px solid white; }
+    .container__galeria .galeria_item .galeria_img {
+      width: 100%; }
+
+.grid_container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr 100 px;
+  grid-template-columns: repeat(3, 1fr); }
+  .grid_container img {
+    width: 100%; }
+
+/*hijos del container*/
+.grid_container div {
+  background-color: white; }
+
+p{
+  padding: 23px;
+}
+
+// comercializadora//
+.grid_comercializadora{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  margin: 0 auto;
+  /* grid-template-rows: 100px 100px auto; */
+  justify-items: center;
+  align-items: center; }
+
+
+//footer//
+footer{
+width: 100%;
+  .social__icons{
+    height: 100px;
+      background: $bluebd;
+      display:flex;
+      flex-wrap: wrap;
+    justify-content: center
+    }
+    a{
+      color: white;
+      text-decoration: none;
+      margin: 50px;
+    }
+    
+}
+.derechos{
+  text-align: center;
+  color:$graybd;
+  background: $bluebd;
+  padding: 10px;
+}
+
+//contacto.html//
+//aplicando bootstrap//
+.formulario{
+  border: solid 1px black;
+  width: 80%;
+  padding: 50px;
+  width: 800px;
+  display: flex;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  border-radius: 30px;
+  box-shadow: 0 5px 5px black;
+  transition: all .0,25s;
+  margin: 30px;
+  .chekbox{
+  display: flex;
+  margin: 10px;
+  justify-content:space-between;
+  padding: 10px;
+  }
+    }
+
+//mediaquery//
+
+@media (max-width:980px) {
+  .container__galeria{
+    background: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    /* grid-template-rows: 100px 100px auto; */
+    justify-items: center;
+    align-items: center;
+}
+  
+}
+@media (max-width:767px){
+  .carousel-caption{
+  font-size:15px;
+  }
+  .container__1,  .container__2 {
+    padding: 30px;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    text-align: justify;
+    border-radius: 30px;
+    box-shadow: 0 5px 5px black;
+    transition: all .0,25s;
+    margin: 15px; }
+    .formulario{
+      width: 70%;
+  padding: 30px;
+  width: 400px;
+  .chekbox{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 5px;
+    }
+
+    }
+    .container__galeria{
+      background: rgb(255, 255, 255);
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      width: 80%;
+      margin: 0 auto;
+      /* grid-template-rows: 100px 100px auto; */
+      justify-items: center;
+      align-items: center;
+  }
+}
+
+@media (max-width:654px){
+footer{
+  height: 200px;
+  background: $bluebd;
+}
+}
